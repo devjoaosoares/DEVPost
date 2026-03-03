@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Sem Nome</title>
     <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/js/main.js"></script>
 </head>
 <body>
 
 <main>
+    <a href="#" class="criar-postagem" onclick="abrirJanela()">+</a>
+    <div id="overlay" class="overlay">
+        <div class="janela">
+            <span class="fechar" onclick="fecharJanela()">×</span>
+            <form method="post" action="/posts" enctype="multipart/form-data">
+                <h1>Criar Publicação</h1>
+                <p>Titulo da publicação:<input type="text" name="title" required></p>
+                <p>Conteúdo da publicação:<textarea name="content" placeholder="O que você está pensando?" required></textarea></p>
+                <p>Imagens:<input type="file" name="images" accept="image/*" multiple></p>
+                <button type="submit">Publicar</button>
+        </div>
+    </div>
     <div class="left-side">
-        <h1>nome do usuario</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque doloremque officia eligendi consequuntur mollitia nobis magni, facilis delectus at reprehenderit voluptates eveniet asperiores vel ipsam cum sunt? Illum, eligendi?</p>
+        <img src="/public/assets/UserPlaceholder.jpg" alt="Foto do usuario" class="userPhotoMain">
+        <nav>
+            <ul>
+                <li><a href="index.html">TimeLine</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="right-side">
         <div class="postagem">

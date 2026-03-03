@@ -58,9 +58,41 @@ main{
     width: 20%;
     position: fixed;
     height: 100vh;
-    padding: 0px 25px;
+    padding: 50px 25px;
     border-right: 1px solid #ff6f00;
-    background: white;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userPhotoMain {
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ff6f00;
+}
+
+.left-side ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.left-side ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+.left-side ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* LADO DIREITO */
@@ -97,9 +129,10 @@ main{
     justify-content: flex-end;
 }
 .userPostPhoto {
-    width: 75px;
+    width: 60px;
     border-radius: 50%;
     border: 1px solid #ff6f00;
+    aspect-ratio: 1/1;
 }
 
 /*Post Content Style*/
@@ -137,4 +170,64 @@ main{
 
 .post-icon {
     max-width: 25px;
+}
+
+/* Criar Postagem */
+.criar-postagem {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  
+  transition: 0.3s;
+}
+
+.criar-postagem:hover {
+  transform: scale(1.1);
+}
+
+/* Modal Criar Postagem */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  padding: 10px;
+}
+
+.janela {
+  display: flex;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1500px;
+  max-height: 2500px;
+  flex-direction: column;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
 }
