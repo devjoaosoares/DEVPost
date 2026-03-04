@@ -12,9 +12,9 @@
 <main>
     <a href="#" class="criar-postagem" onclick="abrirJanela()">+</a>
     <div id="overlay" class="overlay">
-        <div class="janela">
-            <span class="fechar" onclick="fecharJanela()">×</span>
+        <div class="janela">  
             <form method="post" action="/posts" enctype="multipart/form-data">
+                <span class="fechar" onclick="fecharJanela()">×</span>
                 <h1>Criar Publicação</h1>
                 <p>Titulo da publicação:<input type="text" name="title" required></p>
                 <p>Conteúdo da publicação:<textarea name="content" placeholder="O que você está pensando?" required></textarea></p>
