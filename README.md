@@ -20,11 +20,11 @@ O projeto utiliza uma stack sólida para o desenvolvimento web moderno:
 
 
 
-- [x] Cadastro e Login de desenvolvedores.
-- [x] Criação de postagens com suporte a blocos de código.
-- [x] Feed de notícias em tempo real.
-- [x] Perfil de usuário editável.
-- [ ] Sistema de comentários e curtidas (Em desenvolvimento).
+- [ ] Cadastro e Login de desenvolvedores.
+- [ ] Criação de postagens com suporte a blocos de código.
+- [ ] Feed de notícias em tempo real.
+- [ ] Perfil de usuário editável.
+- [ ] Sistema de comentários e curtidas
 
 ---
 
