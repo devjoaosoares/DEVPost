@@ -1,9 +1,9 @@
 import express from 'express';
 
-const router = express.Router();
+const userRoutes = express.Router();
 
-router.get('/status', (req, res) => {
-  res.json({ status: 'ok' });
+userRoutes.get('/status', (req, res) => {
+  res.json({ status: '200' });
 });
 
-export default router;
+export default userRoutes;
